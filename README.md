@@ -1,106 +1,286 @@
-# Agente Conversacional ISO/IEC 27001:2022 — SGSI
+---
+title: sgsi
+sdk: gradio
+sdk_version: 6.14.0
+app_file: app.py
+pinned: false
+---
+
+# Agente Conversacional ISO/IEC 27001:2022 - SGSI
 
 ## Descripción del proyecto
 
 Este proyecto corresponde a la Opción C — Agente Conversacional Avanzado del ejercicio académico.
 
-La aplicación implementa un chatbot especializado en ISO/IEC 27001:2022 y en la implementación de Sistemas de Gestión de Seguridad de la Información (SGSI), utilizando:
+La aplicación implementa una plataforma inteligente especializada en ISO/IEC 27001:2022 y Sistemas de Gestión de Seguridad de la Información (SGSI), utilizando inteligencia artificial generativa mediante Google Gemini y LangChain.
 
-- Gemini (Google Generative AI)
-- LangChain
-- Gradio
-- DuckDuckGo Search
-- Memoria conversacional
+La solución permite apoyar procesos relacionados con:
 
-El agente permite:
+- Implementación de SGSI
+- Diagnóstico inicial
+- Evaluación documental
+- Generación de políticas
+- Evaluación de cumplimiento
+- Gestión de riesgos
+- Definición de alcance
+- Consultas técnicas especializadas
 
-- Explicar formas prácticas de implementar un SGSI.
-- Ayudar a definir el alcance del SGSI.
-- Diagnosticar el estado actual del SGSI mediante preguntas guiadas.
-- Calcular el avance cuantitativo de controles del Anexo A ISO/IEC 27001:2022.
-- Consultar información actualizada mediante búsqueda web.
-- Mantener memoria contextual durante la conversación.
+La plataforma fue desarrollada con un enfoque práctico orientado a organizaciones que desean implementar o fortalecer un Sistema de Gestión de Seguridad de la Información basado en ISO/IEC 27001:2022.
 
 ---
 
-# Funcionalidades principales
+# Aplicación desplegada
 
-## Memoria conversacional
+La aplicación se encuentra desplegada en Hugging Face Spaces:
 
-El chatbot recuerda el contexto reciente de la conversación para mantener continuidad en las respuestas.
-
----
-
-## Herramienta de búsqueda web
-
-La aplicación integra búsquedas usando DuckDuckGo para consultar información actualizada relacionada con:
-
-- ISO 27001:2022
-- SGSI
-- Buenas prácticas
-- Cambios recientes
-- Implementación de controles
+https://huggingface.co/spaces/roldeint/sgsi/
 
 ---
 
-## Herramienta de cálculo
+# Repositorio GitHub
 
-El agente puede:
+Repositorio público del proyecto:
 
-- calcular porcentajes,
-- realizar operaciones matemáticas,
-- estimar avance de controles del Anexo A.
-
-Ejemplo:
-
-```text
-Tengo 45 controles implementados de 93
-```
-
----
-
-## Interfaz gráfica
-
-La aplicación utiliza Gradio para proporcionar una interfaz intuitiva y sencilla.
+https://github.com/Roldeint/agente-iso27001-sgsi
 
 ---
 
 # Tecnologías utilizadas
 
+Este proyecto fue desarrollado utilizando las siguientes tecnologías:
+
 - Python
 - Gradio
 - LangChain
-- Google Gemini
+- Google Gemini 2.5 Flash
 - DuckDuckGo Search
-- AST Safe Calculator
+- Matplotlib
+- PyPDF
+- python-docx
+- Hugging Face Spaces
 
 ---
 
-# Estructura del proyecto
+# Funcionalidades principales
 
-```text
-app.py
-requirements.txt
-README.md
-```
+## 1. Chatbot SGSI
+
+Permite realizar consultas relacionadas con:
+
+- ISO/IEC 27001:2022
+- SGSI
+- Gestión de riesgos
+- Auditoría
+- Controles del Anexo A
+- Declaración de aplicabilidad
+- Implementación práctica
+- Mejora continua
+
+Características:
+
+- Memoria conversacional
+- Respuestas contextualizadas
+- Integración con Gemini
+- Prompt especializado en SGSI
+
+---
+
+## 2. Cálculo de avance del Anexo A
+
+Permite calcular el porcentaje de cumplimiento del Anexo A de ISO/IEC 27001:2022.
+
+Clasifica controles por tipo:
+
+- Organizacionales
+- Personas
+- Físicos
+- Tecnológicos
+
+Características:
+
+- Cálculo automático
+- Porcentaje global
+- Generación de gráficas
+- Recomendaciones automáticas
+
+---
+
+## 3. Diagnóstico inicial del SGSI
+
+Herramienta orientada a evaluar el estado actual del SGSI.
+
+Evalúa aspectos relacionados con:
+
+- Gobierno
+- Gestión documental
+- Gestión de riesgos
+- Controles
+- Concientización
+- Continuidad
+- Cumplimiento
+
+Características:
+
+- Evaluación orientativa
+- Recomendaciones de mejora
+- Diagnóstico inicial de madurez
+
+---
+
+## 4. Generador de alcance inicial del SGSI
+
+Permite generar propuestas iniciales de alcance del SGSI.
+
+Incluye:
+
+- Organización
+- Procesos
+- Sedes
+- Servicios
+- Infraestructura
+- Exclusiones
+- Contexto organizacional
+
+---
+
+## 5. Cumplimiento de cláusulas ISO/IEC 27001:2022
+
+Permite evaluar de forma orientativa el cumplimiento de las cláusulas:
+
+- Cláusula 4
+- Cláusula 5
+- Cláusula 6
+- Cláusula 7
+- Cláusula 8
+- Cláusula 9
+- Cláusula 10
+
+Características:
+
+- Evaluación visual
+- Porcentaje de cumplimiento
+- Generación de gráficas
+
+---
+
+## 6. Generador de políticas de ejemplo
+
+Permite generar mediante IA:
+
+- Política general de seguridad de la información
+- Políticas específicas alineadas con ISO/IEC 27001:2022
+
+Ejemplos:
+
+- Control de acceso
+- Gestión de activos
+- Gestión de incidentes
+- Continuidad
+- Teletrabajo
+- Respaldos
+- Clasificación de información
+
+Características:
+
+- Generación automática mediante IA
+- Descarga de documentos
+- Flujo guiado
+
+---
+
+## 7. Analizador de documentos SGSI
+
+Permite cargar y analizar documentación relacionada con SGSI.
+
+Documentos soportados:
+
+- Políticas
+- Procedimientos
+- Manuales
+- Matrices
+- Planes
+- Declaración de aplicabilidad
+
+Formatos soportados:
+
+- PDF
+- DOCX
+- TXT
+- MD
+
+La IA analiza:
+
+- Tipo documental
+- Fortalezas
+- Debilidades
+- Aspectos faltantes
+- Buenas prácticas ISO 27001
+- Recomendaciones de mejora
+
+---
+
+## 8. Búsqueda web
+
+Permite realizar búsquedas técnicas relacionadas con:
+
+- ISO 27001
+- SGSI
+- Gestión de riesgos
+- Controles
+- Auditoría
+- Buenas prácticas
+
+Características:
+
+- Integración con DuckDuckGo Search
+- Filtrado contextual
+- Resultados especializados
+
+---
+
+# Arquitectura general
+
+Frontend:
+- Gradio
+
+Motor IA:
+- Google Gemini 2.5 Flash
+- LangChain
+
+Herramientas:
+- DuckDuckGo Search
+- Matplotlib
+- PyPDF
+- python-docx
+
+Deployment:
+- Hugging Face Spaces
+
+---
+
+# Características avanzadas
+
+- IA generativa aplicada a SGSI
+- Memoria conversacional
+- Navegación modular
+- Descarga de archivos
+- Generación automática de gráficas
+- Evaluación documental automatizada
+- Interfaz visual profesional
 
 ---
 
 # Instalación local
 
-## 1. Clonar o descargar el proyecto
+## 1. Clonar el repositorio
 
 ```bash
-git clone <repositorio>
+git clone https://github.com/Roldeint/agente-iso27001-sgsi.git
 ```
-
-o descargar el ZIP del proyecto.
 
 ---
 
 ## 2. Crear entorno virtual
-
-### Windows PowerShell
 
 ```powershell
 py -3.14 -m venv venv
@@ -111,7 +291,7 @@ py -3.14 -m venv venv
 ## 3. Activar entorno virtual
 
 ```powershell
-.\venv\Scripts\activate
+.\venv\Scripts\Activate.ps1
 ```
 
 ---
@@ -124,15 +304,15 @@ pip install -r requirements.txt
 
 ---
 
-# Configuración de API Key
+# Configuración API KEY
 
 La aplicación utiliza Gemini mediante Google AI Studio.
 
-Crear una API Key en:
+Crear API Key en:
 
 https://aistudio.google.com/app/apikey
 
-Configurar la variable de entorno:
+Configurar:
 
 ```powershell
 $env:GOOGLE_API_KEY="TU_API_KEY"
@@ -142,9 +322,7 @@ La API Key nunca debe almacenarse directamente dentro del código fuente.
 
 ---
 
-# Ejecución
-
-Ejecutar:
+# Ejecución local
 
 ```powershell
 python app.py
@@ -158,60 +336,12 @@ http://127.0.0.1:7860
 
 ---
 
-# Ejemplos de uso
-
-## Implementación SGSI
+# Estructura del proyecto
 
 ```text
-¿Cómo implementar un SGSI basado en ISO 27001:2022?
-```
-
----
-
-## Diagnóstico SGSI
-
-```text
-Hazme preguntas para evaluar el estado actual del SGSI.
-```
-
----
-
-## Alcance SGSI
-
-```text
-Ayúdame a definir el alcance del SGSI para una empresa de telecomunicaciones y ciberseguridad.
-```
-
----
-
-## Controles Anexo A
-
-```text
-Tengo 42 controles implementados de 93. Calcula mi porcentaje de avance.
-```
-
----
-
-# Deployment en Hugging Face Spaces
-
-La aplicación fue diseñada para desplegarse usando:
-
-- Hugging Face Spaces
-- SDK: Gradio
-- Hardware: CPU Basic
-
-## Configuración requerida
-
-En:
-
-```text
-Settings > Secrets
-```
-
-agregar:
-
-```text
-GOOGLE_API_KEY = TU_API_KEY
+app.py
+README.md
+requirements.txt
 ```
 
 ---
@@ -220,60 +350,53 @@ GOOGLE_API_KEY = TU_API_KEY
 
 ## Funcionalidad
 
-- Validación de entradas
+- Flujo funcional completo
+- Herramientas integradas
 - Manejo de errores
-- Flujo conversacional completo
-- Herramientas funcionales
-
----
+- Navegación modular
 
 ## Uso de IA generativa
 
-- Integración Gemini + LangChain
-- Uso de prompts especializados
-- Respuestas dinámicas
-- Memoria contextual
-
----
+- Gemini + LangChain
+- Prompts especializados
+- Generación documental
+- Evaluación documental IA
 
 ## UI/UX
 
-- Interfaz clara
-- Ejemplos de uso
-- Labels descriptivos
-- Flujo intuitivo
-
----
+- Interfaz visual
+- Menú modular
+- Navegación intuitiva
+- Feedback visual
 
 ## Documentación
 
 - README estructurado
-- Type hints
-- Docstrings
-- Instrucciones de instalación
-
----
+- Instrucciones completas
+- Arquitectura documentada
+- Deployment documentado
 
 ## Deployment
 
-- Compatible con Hugging Face Spaces
-- Manejo seguro de secretos
-- Sin API Keys hardcodeadas
+- Hugging Face Spaces
+- Gestión segura de secretos
+- Aplicación pública
 
 ---
 
 # Consideraciones
 
-Este chatbot tiene fines académicos y de apoyo orientativo.
+Este proyecto tiene fines académicos y de apoyo orientativo.
 
 No reemplaza:
-- auditorías oficiales,
-- interpretación legal,
-- certificaciones formales,
-- evaluación profesional especializada.
+
+- auditorías oficiales
+- certificaciones formales
+- interpretación legal
+- evaluación profesional especializada
 
 ---
 
 # Autor
 
-Proyecto académico enfocado en IA aplicada a ISO/IEC 27001:2022 y SGSI.
+Proyecto académico enfocado en IA aplicada a ISO/IEC 27001:2022 y Sistemas de Gestión de Seguridad de la Información.
